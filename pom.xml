@@ -28,7 +28,7 @@
     </scm>
     <properties>
         <java.version>17</java.version>
-        <spring-cloud-azure.version>5.16.0</spring-cloud-azure.version>
+        <spring-cloud-azure.version>5.19.0</spring-cloud-azure.version>
 <!--        <maven.test.skip>true</maven.test.skip>-->
         <!-- build and test related stuff -->
         <sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
