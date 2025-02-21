@@ -29,7 +29,7 @@
     <properties>
         <java.version>17</java.version>
         <spring-cloud-azure.version>5.19.0</spring-cloud-azure.version>
-<!--        <maven.test.skip>true</maven.test.skip>-->
+        <!-- <maven.test.skip>true</maven.test.skip>-->
         <!-- build and test related stuff -->
         <sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
         <sonar.jacoco.itReportPath>${jacoco.outputDir}/${jacoco.out.it.file}</sonar.jacoco.itReportPath>
@@ -45,6 +45,7 @@
         <dependency>
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjweaver</artifactId>
+            <version>1.9.22</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -88,11 +89,6 @@
             <artifactId>spring-cloud-azure-starter-storage</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-test</artifactId>
             <scope>test</scope>
@@ -134,14 +130,15 @@
             <artifactId>jaxb-runtime</artifactId>
             <version>2.3.5</version>
         </dependency>
-<!--         <dependency>
-            <groupId>org.springdoc</groupId>
-            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
-            <version>2.7.0</version>
-        </dependency> -->
+<!--        <dependency>-->
+<!--            <groupId>org.springdoc</groupId>-->
+<!--            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>-->
+<!--            <version>2.7.0</version>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>com.zaxxer</groupId>
             <artifactId>HikariCP</artifactId>
+            <version>5.1.0</version>
         </dependency>
         <dependency>
             <groupId>com.azure</groupId>
@@ -150,6 +147,22 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-consul-config</artifactId>
+        </dependency>
+        <!-- Test Dependency -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.jacoco</groupId>
+            <artifactId>jacoco-maven-plugin</artifactId>
+            <version>0.8.12</version>
         </dependency>
     </dependencies>
     <dependencyManagement>
